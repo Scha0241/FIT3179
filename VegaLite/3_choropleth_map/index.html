@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
   
-  <!-- CSS file for styling -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -44,15 +42,16 @@
     <a href="emptyCountries.html" class="link-button">Basic Countries Map</a>
     <a href="choroplethMapWithOcean.html" class="link-button">Choropleth Map with Oceans</a>
     <a href="choroplethMapWithCountryName.html" class="link-button">Choropleth Map with Country Names</a>
+    <a href="caloricSupplyByYear.html" class="link-button">Caloric Supply by Year</a> <!-- New link -->
   </div>
-
-  <!-- Placeholder for embedding a graph -->
+  
+  <!-- Optional: Placeholder to embed a specific graph on the index page -->
   <div id="choropleth_map"></div>
 
   <script type="text/javascript">
-    var spec2 = "choroplethMapWithCountryName.html";  // Change to desired graph if you want to embed it
+    var spec2 = "choroplethMapWithCountryName.html";  // Change this if you want to embed another visualization
     vegaEmbed('#choropleth_map', spec2).then(function(result) {
-      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      // Access the Vega view instance as result.view
     }).catch(console.error);
   </script>
 </body>

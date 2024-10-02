@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega, Vega-Lite, and Vega-Embed libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+  
+  <!-- Add some basic styling to the page -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    #caloric_supply_map {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Title of the visualization -->
+  <h1>Daily Caloric Supply per Person by Year</h1>
+  
+  <!-- Div container for the embedded Vega-Lite visualization -->
+  <div id="caloric_supply_map"></div>
+  
+  <script type="text/javascript">
+    // Path to the Vega-Lite JSON specification file
+    var spec = "caloricSupplyByYear.vg.json"; 
+    
+    // Embed the visualization using Vega-Embed
+    vegaEmbed('#caloric_supply_map', spec).then(function(result) {
+      // Access the Vega view instance as result.view if further interaction is needed
+      console.log('Visualization successfully rendered!');
+    }).catch(console.error);
+  </script>
+</body>
+</html>
