@@ -17,14 +17,14 @@
     }
   ],
   "data": {
-    "url": "https://raw.githubusercontent.com/scha0241/FIT3179/main/VegaLite/3_choropleth_map/data/testing.csv",
+    "url": "https://raw.githubusercontent.com/scha0241/FIT3179/week10/VegaLite/3_choropleth_map/data/testing.csv",
     "format": {"type": "csv"}
   },
   "projection": {"type": "equalEarth"},
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/week10/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
       },
       "mark": {
@@ -47,7 +47,7 @@
           "lookup": "Entity",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/scha0241/FIT3179/main/VegaLite/3_choropleth_map/data/testing.csv",
+              "url": "https://raw.githubusercontent.com/scha0241/FIT3179/week10/VegaLite/3_choropleth_map/data/testing.csv",
               "format": {"type": "csv"}
             },
             "key": "Entity",

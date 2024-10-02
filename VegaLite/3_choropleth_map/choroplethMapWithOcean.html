@@ -14,7 +14,7 @@
       "width": 800,
       "height": 400,
       "data": {
-        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/week10/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
       },
       "projection": {"type": "equalEarth"},
@@ -31,14 +31,14 @@
         },
         {
           "data": {
-            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/week10/7_others/oceans.topojson",
             "format": {"type": "topojson", "feature": "oceans"}
           },
           "mark": {"type": "geoshape", "fill": "skyblue"}
         },
         {
           "data": {
-            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
+            "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/week10/2_symbol_map/js/WorldMapWithGraticules.topojson",
             "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
           },
           "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
@@ -49,7 +49,7 @@
               "lookup": "properties.NAME",
               "from": {
                 "data": {
-                  "url": "https://raw.githubusercontent.com/scha0241/FIT3179/main/VegaLite/3_choropleth_map/data/books.csv", 
+                  "url": "https://raw.githubusercontent.com/scha0241/FIT3179/week10/VegaLite/3_choropleth_map/data/books.csv", 
                   "format": {"type": "csv"}
                 },
                 "key": "Country",  // Column name for country names in your dataset
